@@ -69,4 +69,20 @@ def turn
   end
 end
 
+def won?
+  WIN_COMBINATIONS.detect do |win|
+    win_index_1 = win[0]
+    win_index_2 = win[1]
+    win_index_3 = win[2]
+
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+
+    position_1 == "X" && position_2 == "X" && position_3 == "X" ||
+    position_1 == "O" && position_2 == "O" && position_3 == "O"
+  end
+
+end
+
 end
