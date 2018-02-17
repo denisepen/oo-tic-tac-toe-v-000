@@ -61,7 +61,7 @@ def turn
   index = input_to_index(input)
   if valid_move?(index)
     @token = current_player
-    move(index, token)
+    move(index, @token)
     display_board
   else
     puts "Whoops! That's not a valid move"
