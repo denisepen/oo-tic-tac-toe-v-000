@@ -59,7 +59,7 @@ def turn
   input = gets.strip
   index = input_to_index(user_input)
   if valid_move?(index)
-    token = current_player
+    current_player = token
     move(index, token)
     display_board
   else
