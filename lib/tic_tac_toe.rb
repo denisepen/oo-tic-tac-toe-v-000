@@ -46,4 +46,12 @@ def turn_count
   end
 end
 
+def current_player
+  if turn_count % 2 == 0
+    "X"
+  else
+    "O"
+  end
+end
+
 end
