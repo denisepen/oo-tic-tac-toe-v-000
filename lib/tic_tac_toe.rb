@@ -64,7 +64,7 @@ def turn
     display_board
   else
     puts "Whoops! That's not a valid move"
-    turn(board)
+    turn
   end
 end
 
