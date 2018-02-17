@@ -40,7 +40,7 @@ def valid_move?(index)
 end
 
 def turn_count
-    board.count do |space|
+    @board.count do |space|
     # space != " "
     space == "X" || space == "O"
   end
